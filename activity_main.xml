@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/volleyball"
+    android:orientation="vertical"
+    tools:context="com.example.android.volleyballscorecard.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="55dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:text="VOLLEYBALL POINTS TABLE"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/score_text_view"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="55dp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:textSize="50sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:text=":"
+            android:textSize="50sp"
+            android:padding="20dp"/>
+
+        <TextView
+            android:id="@+id/scoreB_text_view"
+            android:layout_width="137dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:paddingLeft="55dp"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:alpha="0.8"
+            android:onClick="addOneTOTeamA"
+            android:padding="20dp"
+            android:text="TEAM A"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:padding="20dp"
+            android:text="TEAM B"
+            android:textSize="30sp"
+            android:onClick="addToTeamB"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:alpha="0.8"
+            android:text="oops sorry"
+            android:onClick="subToTeamA"/>
+
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:text="oops sorry"
+            android:alpha="0.8"
+            android:onClick="subToTeamB"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="false"
+        android:text="Reset"
+        android:alpha="0.8"
+        android:layout_marginLeft="147dp"
+        android:layout_marginTop="130dp"
+        android:onClick="Reset"/>
+
+
+</LinearLayout>
